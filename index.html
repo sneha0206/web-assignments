@@ -6,100 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    table{
-        background-color: whitesmoke;
-    }
-</style>
 <body>
-    <h1>This is Time Table</h1>
+    <h1>My Bio Data</h1>
 
-    <table border="5" cellspacing="10" cellpadding="10">
-        <thead>
-            <tr>
-                <th>Days/Periods</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th></th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Mon</td>
-                <td>Science</td>
-                <td>English</td>
-                <td>Hindi</td>
-                <td rowspan="6">B <br> R <br> E <br> A <br> K</td>
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
+    <form action="#">
+        <fieldset>
 
-            <tr>
-                <td>Tue</td>
-                <td>Science</td>
-                <td>English</td>
-                <td>Hindi</td>
-               
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
+            <legend>Personal Information</legend>
 
-            <tr>
-                <td>Wed</td>
-                <td>Science</td>
-                <td>English</td>
-                <td rowspan="3">Hindi</td>
-               
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
+           <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="First Name" name="firstname">
+            <label for="lastname">LastName :</label>
+            <input type="text" id="lastname" placeholder="Last Name">
+            <br>
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="other">Others</label>
+            <input type="radio" id="other" name="gender" value="Female">
+            <br>
+            <br>
+            <label for="DOB">Date of Birth :</label>
+            <input type="date" id="DOB">
+            <br>
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <br>
+            <br>
+            <label for="phone">Phone :</label>
+            <input type="tel" id="phone" placeholder="+91" maxlength="10">
+            <br>
+            <br>
+            <label for="height">Height :</label>
+            <input type="number" id="height" placeholder="Height in feet">
 
-            <tr>
-                <td>Thu</td>
-                <td>Science</td>
-                <td>English</td>
-                
-               
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
+        </fieldset>
 
-            <tr>
-                <td>Fri</td>
-                <td>Science</td>
-                <td>English</td>
-                
-               
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
+        <fieldset>
 
-            <tr>
-                <td>Sat</td>
-                <td>Science</td>
-                <td>English</td>
-                <td>Hindi</td>
-               
-                <td colspan="3">Maths</td>
-                
-            </tr>    
-        </tbody>
+            <legend>Education</legend>
 
-        <tfoot>
-            <tr>
-                <th colspan="8">This is Class VIII</th>
-            </tr>
-        </tfoot>
-    </table>
-
+            <label for="schoolname">School Name :</label>
+            <input type="text" id="schoolname" placeholder="School Name">
+            <br>
+            <br>
+            <label for="class">Class :</label>
+            <input type="number" id="class" placeholder="Enter Class">
+            <br>
+            <br>
+            <label for="stream">Stream :</label>
+            <select>
+                <option value="stream">Stream</option>
+                <option value="med">Medical</option>
+                <option value="non-med">Non-medical</option>
+                <option value="arts">Humanities</option>
+                <option value="commerce">Commerce</option>
+            </select>
+            <br>
+            <br>
+            <label for="marksheet">Marksheet</label>
+            <input type="file">
+        </fieldset>
+        <br>
+        <button>Submit</button>
+    </form>
 </body>
 </html>
